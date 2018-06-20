@@ -17,14 +17,17 @@ header {
   height: 100%;
   text-align: center; }
   header img {
-    width: 80%;
-    margin: 50px auto; }
+    display: block;
+    width: 10%; }
 
 nav li {
   margin-top: 25px; }
 
+nav .subNav {
+  font-size: 0.5em; }
+
 nav a {
-  font-size: 24px;
+  font-size: 1em;
   color: #ffffff;
   font-weight: medium; }
 

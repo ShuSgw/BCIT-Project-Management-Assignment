@@ -1,4 +1,4 @@
-const nav = (name, link) => {
+const nav = (name, link, id) => {
     return '<li><a href=' + link + '.html' + '>' + name + "<a></li>";
 }
 

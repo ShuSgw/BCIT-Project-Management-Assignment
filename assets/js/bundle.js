@@ -1,19 +1,33 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-var nav = require('./nav');
-var bar = require('./slide');
+var nav = require('../commons/nav');
+var bar = require('../commons/slide');
+var subNav = require('../commons/subNav');
 var $ = require('jQuery');
 
 var mainNav = document.getElementById("mainNav");
 mainNav.innerHTML =
     nav("Home", "index") +
+    subNav("What is Web design", "web_design") +
+    subNav("What is Web Development", "web_dev") +
+    subNav("What is Full Stack Developer", "full_stack_developer") +
+    subNav("What is Full Stack Web Designer", "full_stack_web_designer") +
+    nav("History", "history") +
     nav("Standards & Regulations", "standards_regulations") +
     nav("Current Tools", "current_tools") +
+    subNav("Current Tools for Web Design", "current_tool_web_design") +
+    subNav("Current Tools for Web Development", "current_tool_web_dev") +
     nav("Articles & Resources", "article_resources") +
     nav("Fture Technologies", "future_tech") +
+    subNav("Web Design Trend", "web_design_trends") +
+    subNav("Web Development Trend", "web_dev_trends") +
     nav("F.A.Q", "faq") +
-    nav("The Team", "team");
-},{"./nav":2,"./slide":3,"jQuery":4}],2:[function(require,module,exports){
-const nav = (name, link) => {
+    nav("The Team", "team") +
+    subNav("Ko", "about_ko") +
+    subNav("Nicole", "about_nicole") +
+    subNav("Sara", "about_sara") +
+    subNav("Shuhei", "about_shuhei");
+},{"../commons/nav":2,"../commons/slide":3,"../commons/subNav":4,"jQuery":5}],2:[function(require,module,exports){
+const nav = (name, link, id) => {
     return '<li><a href=' + link + '.html' + '>' + name + "<a></li>";
 }
 
@@ -27,6 +41,12 @@ function bar() {
 module.exports = bar;
 
 },{}],4:[function(require,module,exports){
+const subNav = (name, link) => {
+    return '<li class="subNav"><a href=' + link + '.html' + '>' + name + '<a></li>';
+}
+
+module.exports = subNav;
+},{}],5:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
