@@ -1,3 +1,11 @@
 header{
-    background:pink;
+    background: $color1;
+    width: 400px;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    img{
+        width: 80%;
+        margin: 50px auto;
+    }
 }
