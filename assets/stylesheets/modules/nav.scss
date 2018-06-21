@@ -1,9 +1,19 @@
 nav{
     li{
         margin-top: 25px;
+        position: relative;
+    }li:hover{
+        background :red;
     }
     .subNav{
-        font-size: 0.5em;
+        top: 0;
+        left: 100%;
+        width: 300px;
+        position: absolute;
+        display: none;
+        background:$color1;
+    }.subNav div:hover{
+        background:red;
     }
     a{
         font-size: 1em;
