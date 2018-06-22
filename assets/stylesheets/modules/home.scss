@@ -1,10 +1,12 @@
-.single-item{
+#hideSlide{
+    overflow: hidden;
+    .single-item{
     // width: 100vh;
     // height: 100vh;
     // float: right;
     margin-left: 400px;
     position: relative;
-    z-index: -99;
+    z-index: 0;
         section{
             height: 100vh;
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg");
@@ -18,14 +20,9 @@
                 top: 50%;
                 right: 50%;
                 transform: translateY(-50%) translateX(50%);
-                h1{
-                font-size: 53px;
-                color: white;
-                }p{
-                    margin-top:30px;
+                p{
                     color: white;
                 }a{
-                    margin: 30px 0;
                     display: inline-block;
                     width: 300px;
                     margin-right: 30px;
@@ -35,6 +32,7 @@
                     color: white;
                     border: 7px solid $color1;
                     transition: all 0.5s;
+                    position: relative;
                 }a:hover{
                         background: $color1;
                     }
@@ -44,7 +42,7 @@
                     padding: 80px 0;
                 }
                 h3{
-                    z-index: 99;
+                    z-index: 99;;
                     font-size: 48px;
                     padding: 0 0 30px 0;
                 }
@@ -80,10 +78,11 @@
         }.slick-prev{
             position: absolute;
             left: 20px;
-            z-index: 99;
+            z-index: 99;;
         }.slick-arrow{
             position: absolute;
             right: 20px;
-            z-index: 99;
+            z-index: 99;;
         }
     }
+}
