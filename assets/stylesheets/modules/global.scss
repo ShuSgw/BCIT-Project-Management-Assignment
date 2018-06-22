@@ -1,29 +1,4 @@
 body{
-    h1{
-        font-size: 45pt;
-        color: #ffffff;
-        margin-bottom: 30px;
-    }h2{
-        font-size: 40pt;
-        color: #ffffff;
-        margin-bottom: 30px;
-    }h3{
-        font-size: 35pt;
-        color: #ffffff;
-        margin-bottom: 30px;
-    }
-    p, a{
-        font-size: 24px;
-        color: #000000;
-        line-height: 1.7;
-    }
-    p{
-        margin-bottom: 30px
-    }
-    a{
-        color: #1287a8;
-        text-decoration: none;
-    }
     font-family: 'Roboto', sans-serif;
     .content{
         margin-left: 400px;
@@ -33,25 +8,56 @@ body{
             margin: 0 auto;
             width: 70%;
             position: relative;
-
+            h1{
+                font-size: 45pt;
+                color: #ffffff;
+                margin-bottom: 30px;
+            }
             h2{
+                font-size: 40pt;
                 color: $color1;
+                margin-bottom: 30px;
             }
             h3{
+                font-size: 35pt;
                 color: $color1;
+                margin-bottom: 30px;
             }
             span{
-                opacity: 0.5;
+                opacity: 0.2;
                 position: absolute;
+                color: $color1;
                 z-index: -1;
                 font-size: 140px;
-                top: 0.1%;
+                top: -1%;
                 left: 1%;
                 transform: translateY(-50%) translateX(-50%);
             }
+            p, a, li{
+                font-size: 24px;
+                color: #000000;
+                line-height: 1.7;
+                text-decoration: none;
+
+            }p{
+                margin-bottom: 30px;
+            }a{
+                color: #1287a8;
+                text-decoration: none;
+            }
+            ul{
+                margin: 2em 0 2em 2em;
+
+            }
+            li{
+                margin-left: 2em;
+            }
         }
     }section:not(:first-child){
-        margin: 120px 0;
+        margin: 90px 0;
+    }
+    section:nth-child(odd) span{
+        left: 100%;
     }
     section:first-of-type{
         height: 100vh;
@@ -62,9 +68,13 @@ body{
         position: relative;
         .container{
             position: absolute;
+            width: 80%;
             top: 50%;
             right: 50%;
             transform: translateY(-50%) translateX(50%);
+        }
+        h2{
+            color: white;
         }
         p{
             color: white;

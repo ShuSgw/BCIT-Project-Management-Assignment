@@ -1,13 +1,11 @@
 #hideSlide{
     overflow: hidden;
     .single-item{
-    // width: 100vh;
-    // height: 100vh;
-    // float: right;
     margin-left: 400px;
     position: relative;
     z-index: 0;
         section{
+            margin: 0;
             height: 100vh;
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg");
             background-size: cover;
@@ -47,11 +45,8 @@
                     padding: 0 0 30px 0;
                 }
             }
-        }section:first-of-type{
-            background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg");
-            //to fix margin in other pages(not first child)
-            margin: 0;
-        }section:nth-of-type(2){
+        }
+        section:nth-of-type(2){
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image2.jpg");
             //to fix margin in other pages(not first child)
             margin: 0;
@@ -63,7 +58,8 @@
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image4.jpg");
             //to fix margin in other pages(not first child)
             margin: 0;
-        }section:before{
+        }
+        section:before{
             content: '';
             position: absolute;
             width: 100%;
