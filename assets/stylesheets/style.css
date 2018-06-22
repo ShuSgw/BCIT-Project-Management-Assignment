@@ -21,13 +21,29 @@ body {
     margin-bottom: 30px; }
   body a {
     color: #1287a8;
-    text-decoration: none;
-    margin-bottom: 10px; }
+    text-decoration: none; }
   body .content {
     margin-left: 400px; }
   body section .container {
     margin: 0 auto;
-    width: 70%; }
+    width: 70%;
+    position: relative; }
+    body section .container h2 {
+      color: #9b60b2; }
+    body section .container h3 {
+      color: #9b60b2; }
+    body section .container span {
+      opacity: 0.5;
+      position: absolute;
+      z-index: -1;
+      font-size: 140px;
+      top: 0.1%;
+      left: 1%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%); }
+  body section:not(:first-child) {
+    margin: 120px 0; }
   body section:first-of-type {
     height: 100vh;
     background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg");
@@ -83,7 +99,8 @@ header {
 
 nav li {
   margin-top: 25px;
-  position: relative; }
+  position: relative;
+  padding: 4px 4px; }
 
 nav li:hover {
   background: red; }
@@ -98,6 +115,9 @@ nav .subNav {
 
 nav .subNav div:hover {
   background: red; }
+
+nav .subNav div {
+  padding: 4px 4px; }
 
 nav a {
   font-size: 1em;
@@ -151,13 +171,17 @@ nav a {
           font-size: 48px;
           padding: 0 0 30px 0; }
     #hideSlide .single-item section:first-of-type {
-      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg"); }
+      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg");
+      margin: 0; }
     #hideSlide .single-item section:nth-of-type(2) {
-      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image2.jpg"); }
+      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image2.jpg");
+      margin: 0; }
     #hideSlide .single-item section:nth-of-type(3) {
-      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image3.jpg"); }
+      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image3.jpg");
+      margin: 0; }
     #hideSlide .single-item section:nth-of-type(4) {
-      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image4.jpg"); }
+      background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image4.jpg");
+      margin: 0; }
     #hideSlide .single-item section:before {
       content: '';
       position: absolute;
@@ -224,34 +248,49 @@ nav a {
   .what_is .full_stack_developer {
     background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image4.jpg"); }
 
-.teams {
+.content .teams {
   text-align: center;
   position: relative;
-  height: 100vh; }
-  .teams h1 {
+  height: 100vh;
+  overflow: hidden; }
+  .content .teams h1 {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 20%;
     -webkit-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%); }
-  .teams .team {
-    position: absolute;
-    background: red; }
-    .teams .team img {
-      width: 100%; }
-    .teams .team a {
-      width: 90%; }
-  .teams .sara {
-    top: 5%; }
-  .teams .nicole {
-    bottom: 5%;
-    right: 5%; }
-  .teams .ko {
-    top: 5%;
-    right: 5%; }
-  .teams .shu {
-    bottom: 5%; }
+  .content .teams .team {
+    width: 50%;
+    height: 50%;
+    position: absolute; }
+    .content .teams .team img {
+      width: 45%; }
+    .content .teams .team a {
+      width: 45%; }
+  .content .teams .sara {
+    left: -10%;
+    top: 1.5%; }
+  .content .teams .nicole {
+    left: -10%;
+    bottom: 0; }
+  .content .teams .ko {
+    right: -10%;
+    top: 1.5%; }
+  .content .teams .shu {
+    right: -10%;
+    bottom: 0; }
+
+.team section:first-of-type .container {
+  text-align: center; }
+  .team section:first-of-type .container img {
+    width: 50%;
+    margin-bottom: 30px; }
+  .team section:first-of-type .container h2 {
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: lighter; }
 
 footer {
   position: fixed;

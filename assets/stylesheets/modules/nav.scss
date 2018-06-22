@@ -2,6 +2,7 @@ nav{
     li{
         margin-top: 25px;
         position: relative;
+        padding: 4px 4px;
     }li:hover{
         background :red;
     }
@@ -14,6 +15,8 @@ nav{
         background:$color1;
     }.subNav div:hover{
         background:red;
+    }.subNav div{
+        padding: 4px 4px;
     }
     a{
         font-size: 1em;

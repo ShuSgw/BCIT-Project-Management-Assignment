@@ -1,0 +1,39 @@
+.content{
+    .teams{
+        text-align: center;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .team{
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        img{
+            width: 45%;
+        }
+        a{
+            width: 45%;
+        }
+    }.sara{
+        left: -10%;
+        top: 1.5%;
+    }.nicole{
+        left: -10%;
+        bottom: 0;
+    }.ko{
+        right: -10%;
+        top: 1.5%;
+    }.shu{
+        right: -10%;
+        bottom: 0;
+    }
+    }
+
+}

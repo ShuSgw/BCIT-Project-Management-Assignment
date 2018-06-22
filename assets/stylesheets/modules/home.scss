@@ -49,12 +49,20 @@
             }
         }section:first-of-type{
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image1.jpg");
+            //to fix margin in other pages(not first child)
+            margin: 0;
         }section:nth-of-type(2){
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image2.jpg");
+            //to fix margin in other pages(not first child)
+            margin: 0;
         }section:nth-of-type(3){
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image3.jpg");
+            //to fix margin in other pages(not first child)
+            margin: 0;
         }section:nth-of-type(4){
             background-image: url("../../assets/img/visionweb_p0_homepage-assets/header_image4.jpg");
+            //to fix margin in other pages(not first child)
+            margin: 0;
         }section:before{
             content: '';
             position: absolute;
