@@ -31,10 +31,10 @@ mainNav.innerHTML =
     nav("F.A.Q ", "faq") +
     nav("The Team", "team",
         "<div class='subNav'>" +
-        "<a href='about_ko.html'><div>Ko</div></a>" +
-        "<a href='about_nicole.html'><div>Nicole</div></a>" +
-        "<a href='about_sara.html'><div>Sara</div></a>" +
-        "<a href='about_shuhei.html'><div>Shuhei</div></a>" +
+        "<a href='team_about_ko.html'><div>Ko</div></a>" +
+        "<a href='team_about_nicole.html'><div>Nicole</div></a>" +
+        "<a href='team_about_sara.html'><div>Sara</div></a>" +
+        "<a href='team_about_shuhei.html'><div>Shuhei</div></a>" +
         "</div>"
     );
 
