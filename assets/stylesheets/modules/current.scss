@@ -1,0 +1,9 @@
+.back{
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+}section:nth-child(odd) .back{
+    right: -30%;
+}section:nth-child(even) .back{
+    left: -30%;
+}

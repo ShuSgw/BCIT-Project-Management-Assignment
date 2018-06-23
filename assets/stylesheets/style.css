@@ -7,6 +7,14 @@ body {
     margin: 0 auto;
     width: 70%;
     position: relative; }
+    body section .container img {
+      display: block;
+      margin: 80px auto; }
+    body section .container iframe {
+      display: block;
+      margin: 0 auto;
+      width: 1000px;
+      height: 500px; }
     body section .container h1 {
       font-size: 45pt;
       color: #ffffff;
@@ -78,7 +86,8 @@ body {
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
-      position: relative; }
+      position: relative;
+      margin: 5px; }
     body section:first-of-type a:hover {
       background: #9b60b2; }
   body section:first-of-type::before {
@@ -304,6 +313,17 @@ nav a {
     margin-top: 10px;
     font-size: 3em;
     font-weight: lighter; }
+
+.back {
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1; }
+
+section:nth-child(odd) .back {
+  right: -30%; }
+
+section:nth-child(even) .back {
+  left: -30%; }
 
 footer {
   position: fixed;
