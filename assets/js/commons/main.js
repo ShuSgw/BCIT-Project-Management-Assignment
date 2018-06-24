@@ -38,6 +38,39 @@ mainNav.innerHTML =
     );
 
 $(function () {
+    var w = $(window).width();
+    var x = 760;
+    if (w <= x) {
+        $("#mobilexBtn").show();
+        $("#mobilehBtn").show();
+
+    } else {
+        $("#mobilexBtn").hide();
+        $("#mobilehBtn").hide();
+    }
+    $(window).resize(function () {
+        $(function () {
+            var w = $(window).width();
+            var x = 760;
+            if (w <= x) {
+                $("#mobilexBtn").show();
+                $("#mobilehBtn").show();
+            } else {
+                $("#mobilexBtn").hide();
+                $("#mobilehBtn").hide();
+            }
+        });
+    });
+    $("#mobilehBtn").click(function () {
+        $("header").show(200);
+        $(this).hide(200);
+
+    });
+    $("#mobilexBtn").click(function () {
+        $("#mobilehBtn").show(200);
+        $("header").hide(200);
+    });
+
     $("li").mouseenter(function () {
         $(this).siblings().find(".subNav").hide();  // 兄弟要素に含まれるサブメニューを全部消す。
         $(this).children().slideDown(150);
